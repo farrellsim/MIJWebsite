@@ -39,12 +39,11 @@ function useFadeIn(direction = 'up', delay = 0) {
 
 function MIJLogoMark({ size = 48 }) {
   return (
-    <svg width={size} height={Math.round(size * 0.9)} viewBox="0 0 130 115" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <ellipse cx="65" cy="57" rx="62" ry="52" stroke="#0A6EBD" strokeWidth="3" fill="white" />
-      <text x="6" y="88" fontFamily="Georgia, serif" fontStyle="italic" fontWeight="bold" fontSize="72" fill="#0D1F3C">M</text>
-      <text x="72" y="87" fontFamily="Georgia, serif" fontStyle="italic" fontWeight="bold" fontSize="68" fill="#16a34a">i</text>
-      <text x="90" y="92" fontFamily="Georgia, serif" fontStyle="italic" fontWeight="bold" fontSize="68" fill="#dc2626">j</text>
-    </svg>
+    <img
+      src="/logo.png"
+      alt="PT. Migas Indonesia Jaya"
+      style={{ height: size, width: 'auto', objectFit: 'contain' }}
+    />
   )
 }
 
